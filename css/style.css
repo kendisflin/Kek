@@ -1,0 +1,63 @@
+body
+{
+    margin: 0; /*отступ*/
+    padding: 0;/*сколько элементов будет вокруг*/
+}
+
+.container /*обращение к классу*/
+{
+    min-height: 100vh;
+    display: grid; /*как будет позиционироваться элемент*/
+    grid-template-rows: 70px auto;
+    grid-template-columns: 70px auto;
+}
+
+
+.header
+{
+    
+}
+
+.menu
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    grid-row-start: 1;
+    grid-row-end:  span 2;  /*две колонки подряд*/
+    border-right: 1.5px solid #e5e8ed; /*тоненькая полоса*/
+}
+
+.menu-action
+{
+    height: 70px;
+    display: flex;
+    justify-content: center; /*выравнивание по центру*/
+    align-items: center;
+}
+
+.menu-img
+{
+    height: 40px;
+}
+
+.menu-item
+{
+    height: 70px;
+    display: flex;
+    justify-content: center; /*выравнивание по центру*/
+    align-items: center;
+    border-left: 4px solid #fff;
+}
+
+.menu-item:hover
+{
+    border-left: 4px solid #a00b00;
+    cursor: pointer;
+}
+
+.content
+{
+    background: #f4f7fc;
+}
