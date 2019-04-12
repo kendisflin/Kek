@@ -8,14 +8,14 @@ body
 {
     min-height: 100vh;
     display: grid; /*как будет позиционироваться элемент*/
-    grid-template-rows: 70px auto;
-    grid-template-columns: 70px auto;
+    grid-template-rows: 60px auto;
+    grid-template-columns: 60px auto;
 }
 
 
 .header
 {
-    
+
 }
 
 .menu
@@ -31,7 +31,7 @@ body
 
 .menu-action
 {
-    height: 70px;
+    height: 60px;
     display: flex;
     justify-content: center; /*выравнивание по центру*/
     align-items: center;
@@ -44,17 +44,45 @@ body
 
 .menu-item
 {
-    height: 70px;
+    height: 60px;
     display: flex;
     justify-content: center; /*выравнивание по центру*/
     align-items: center;
     border-left: 4px solid #fff;
+    border-right: 4px solid transparent;
+    text-decoration: none;
+    transition: all 300ms ease-in-out; /*подсвечивание красным меню пунктов*/
+}
+
+.menu-item:visited > i/*если ссылка была посещена*/
+{
+    color: #333333;
+}
+
+.menu-item--active:visited > i
+{
+    color:blue;
 }
 
 .menu-item:hover
 {
     border-left: 4px solid #a00b00;
     cursor: pointer;
+}
+
+.menu-item--active
+{
+    border-left: 4px solid #a00b00;
+}
+
+.menu-item > i
+{
+    color: black;    
+}
+
+.menu-item--active  > i /*иконка с газетой красной*/
+{
+    color: #a00b00;
 }
 
 .content
