@@ -1,0 +1,32 @@
+.index
+{
+    margin: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap; 
+}
+
+.card
+{
+    margin: 0 60px 60px 0; /*сверху справа снизу слева*/
+    height: 300px;
+    width: 400px;    
+    background: white;
+}
+
+.card-img > img
+{
+    height: 150px;
+    width: 400px;
+}
+
+.card-header
+{
+    margin: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Cormorant Infant', sans-serif;
+    font-size: 30px;
+}
