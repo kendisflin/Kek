@@ -12,7 +12,6 @@ body
     grid-template-columns: 60px auto;
 }
 
-
 .header
 {
 
@@ -66,23 +65,23 @@ body
 
 .menu-item:hover
 {
-    border-left: 4px solid #a00b00;
+    border-left: 4px solid blue;
     cursor: pointer;
 }
 
 .menu-item--active
 {
-    border-left: 4px solid #a00b00;
+    border-left: 4px solid blue;
 }
 
 .menu-item > i
 {
-    color: black;    
+    color: #333333;    
 }
 
 .menu-item--active  > i /*иконка с газетой красной*/
 {
-    color: #a00b00;
+    color: blue;
 }
 
 .content
